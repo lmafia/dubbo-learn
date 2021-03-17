@@ -15,7 +15,10 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class DubboConfig {
 
-    @DubboReference(interfaceClass = UserService.class)
+    @DubboReference(interfaceClass = UserService.class,
+            url = "dubbo://127.0.0.1:20081",
+            group = "${server.member.group}"
+    )
     private UserService userService;
 
     @Bean(name = "userService")

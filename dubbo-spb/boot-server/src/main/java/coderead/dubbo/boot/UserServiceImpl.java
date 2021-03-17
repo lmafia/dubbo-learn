@@ -10,12 +10,11 @@ import org.apache.dubbo.config.annotation.DubboService;
 import org.apache.dubbo.config.annotation.Method;
 
 /**
- * @author 鲁班大叔
+ * @author lmafia
  * @date 2021
  */
-//@DubboService(timeout = 4000 ,methods =
-//        {@Method(name = "getUser" ,timeout = 2000)})
-@DubboService
+@DubboService(group = "${server.member.group}")
+//@DubboService
 public class UserServiceImpl implements UserService {
 
     private Integer port;
