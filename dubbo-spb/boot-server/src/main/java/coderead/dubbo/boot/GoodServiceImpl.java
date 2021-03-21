@@ -4,17 +4,17 @@ package coderead.dubbo.boot;
  */
 
 
+import coderead.dubbo.api.GoodsService;
 import coderead.dubbo.api.User;
 import coderead.dubbo.api.UserService;
 import org.apache.dubbo.config.annotation.DubboService;
-import org.apache.dubbo.config.annotation.Method;
 
 /**
  * @author lmafia
  * @date 2021
  */
 @DubboService
-public class UserServiceImpl implements UserService {
+public class GoodServiceImpl implements GoodsService {
 
     private Integer port;
 
